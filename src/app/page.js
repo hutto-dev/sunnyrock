@@ -1,8 +1,5 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import React from "react";
 import "./home.css";
-import techImage from "./assets/tech-image.jpg";
 
 export default function Home() {
   return (
@@ -23,7 +20,10 @@ export default function Home() {
                 <a href="#services">Services</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>x
+                <a href="#partners">Partners</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav> */}
@@ -43,7 +43,7 @@ export default function Home() {
               </p>
             </div>
             <div className="hero-image">
-              <img src={techImage} alt="Blockchain Technology" />
+              <img src="/assets/tech-image.jpg" alt="Blockchain Technology" />
             </div>
           </div>
         </div>
@@ -60,6 +60,21 @@ export default function Home() {
             network stability for its partner companies, contributing to
             decentralized ecosystems.
           </p>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section id="partners" className="partners">
+        <div className="container">
+          <h2>Currently running nodes on...</h2>
+          <div className="partner-grid">
+            <div className="partner-item">
+              <img
+                src="/assets/partner-logo-1.png"
+                alt="Blockchain Partner 1"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -90,29 +105,7 @@ export default function Home() {
       <footer className="footer">
         <div className="container">
           <p>© 2025 SunnyRock. All rights reserved.</p>
-          <div className="social-links">
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </div>
+          <p>info@sunnyrock.org</p>
         </div>
       </footer>
     </div>
