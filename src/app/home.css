@@ -13,10 +13,10 @@
 }
 
 body {
-  font-family: "Roboto", monospace; /* Use Roboto Mono for body text */
+  font-family: Rubik;
   line-height: 1.6;
   color: #fff;
-  background-color: #0e214c; /* oxford-blue */
+  background-color: #ffffff; /* oxford-blue */
 }
 
 /* Color Palette */
@@ -88,40 +88,38 @@ body {
 
 /* Hero Section */
 .hero {
-  background: var(--gradient);
-  padding: 80px 20px;
   min-height: 60vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .hero-text {
   flex: 1;
-  text-align: left;
+  max-width: 600px; /* Limit text width */
+  margin-left: 20px; /* Adjusted for balance */
+  margin-left: 90px;
+  margin-right: 10px;
 }
 
 .hero-text h2 {
+  font-family: "Sunborn", monospace;
+  letter-spacing: 2px;
   font-size: 2.8rem;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #222fde;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   line-height: 125%;
+}
+
+#empowering {
+  color: #fb08ba;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  color: #fff;
-  max-width: 400px;
+  color: black;
 }
 
 .cta-button {
@@ -141,28 +139,28 @@ body {
 }
 
 .hero-image {
-  flex: 1;
-  text-align: right;
+  width: 50%;
 }
 
 .hero-image img {
-  width: 500px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 95%;
+
+  margin-top: 10px;
 }
 
 /* About Section */
 .about {
   padding: 60px 20px;
-  background-color: var(--delft-blue);
+  background-color: #cb3a5b;
 }
 
 .about h2 {
+  font-family: "Sunborn", monospace;
+  letter-spacing: 1px;
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: var(--ultra-pink);
+  color: white;
 }
 
 .about p {
@@ -180,6 +178,8 @@ body {
 }
 
 .partners h2 {
+  font-family: "Sunborn", monospace;
+  letter-spacing: 1px;
   font-size: 2rem;
   margin-bottom: 20px;
   color: black;
@@ -193,20 +193,51 @@ body {
 }
 
 #vitruveo-logo {
-  width: 400px;
+  width: 200px;
 }
 
 /* Services Section */
 .services {
   padding: 60px 20px;
-  background-color: var(--tekhelet);
+  background: hsla(346, 58%, 51%, 1);
+
+  background: linear-gradient(
+    0deg,
+    hsla(346, 58%, 51%, 1) 0%,
+    hsla(354, 57%, 48%, 1) 19%,
+    hsla(3, 57%, 48%, 1) 43%,
+    hsla(14, 79%, 49%, 1) 72%,
+    hsla(20, 100%, 50%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    0deg,
+    hsla(346, 58%, 51%, 1) 0%,
+    hsla(354, 57%, 48%, 1) 19%,
+    hsla(3, 57%, 48%, 1) 43%,
+    hsla(14, 79%, 49%, 1) 72%,
+    hsla(20, 100%, 50%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    0deg,
+    hsla(346, 58%, 51%, 1) 0%,
+    hsla(354, 57%, 48%, 1) 19%,
+    hsla(3, 57%, 48%, 1) 43%,
+    hsla(14, 79%, 49%, 1) 72%,
+    hsla(20, 100%, 50%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CB3A5B", endColorstr="#BF3543", GradientType=1 );
 }
 
 .services h2 {
+  font-family: "Sunborn", monospace;
+  letter-spacing: 1px;
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: var(--ultra-pink);
+  color: white;
 }
 
 .service-grid {
@@ -216,27 +247,32 @@ body {
 }
 
 .service-item {
-  background-color: var(--royal-purple);
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15); /* Adds depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* For potential pseudo-elements or layering */
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle border for definition */
 }
 
 .service-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px) scale(1.02); /* Slight lift and scale for pop-out effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 12px 40px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .service-item h3 {
+  font-family: "Sunborn", monospace;
+  letter-spacing: 1px;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #fff;
+  color: rgb(19, 18, 18);
 }
 
 .service-item p {
   font-size: 1rem;
-  color: #f0e6f6; /* Light contrast for readability */
+  color: rgb(19, 18, 18);
 }
 
 /* Footer */

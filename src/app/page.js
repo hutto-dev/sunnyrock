@@ -36,20 +36,18 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="hero">
-        <div className="container">
-          <div className="hero-content">
-            <div className="hero-text">
-              <h2>Empowering Blockchain Scalability</h2>
-              <p>
-                At SunnyRock, we contribute to blockchain scalability by running
-                validator nodes that validate and record transactions across
-                decentralized platforms.
-              </p>
-            </div>
-            <div className="hero-image">
-              <img src="/tech-image.jpg" alt="Blockchain Technology" />
-            </div>
-          </div>
+        <div className="hero-text">
+          <h2>
+            <span id="empowering">Empowering</span> Blockchain Scalability
+          </h2>
+          <p>
+            At SunnyRock, we contribute to blockchain scalability by running
+            validator nodes that validate and record transactions across
+            decentralized platforms.
+          </p>
+        </div>
+        <div className="hero-image">
+          <img src="/hero.png" alt="Blockchain Technology" />
         </div>
       </section>
 
