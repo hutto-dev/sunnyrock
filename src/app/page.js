@@ -45,6 +45,7 @@ export default function Home() {
             validator nodes that validate and record transactions across
             decentralized platforms.
           </p>
+          <button className="cta-button">Our services</button>
         </div>
         <div className="hero-image">
           <img src="/hero.png" alt="Blockchain Technology" />
