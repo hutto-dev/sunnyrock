@@ -9,7 +9,7 @@ export default function Home() {
       <header className="header">
         <div className="container">
           <img
-            src="/sunnyrockLogo.svg"
+            src="/sunnyRockNew.svg"
             alt="SunnyRock logo. A sun mixed with a rock"
           />
           {/* <nav>
