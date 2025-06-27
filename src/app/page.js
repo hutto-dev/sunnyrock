@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -7,7 +8,10 @@ export default function Home() {
       {/* Header */}
       <header className="header">
         <div className="container">
-          <h1 className="logo">SunnyRock</h1>
+          <img
+            src="/sunnyrockLogo.svg"
+            alt="SunnyRock logo. A sun mixed with a rock"
+          />
           {/* <nav>
             <ul className="nav-links">
               <li>
@@ -43,7 +47,7 @@ export default function Home() {
               </p>
             </div>
             <div className="hero-image">
-              <img src="/assets/tech-image.jpg" alt="Blockchain Technology" />
+              <img src="/tech-image.jpg" alt="Blockchain Technology" />
             </div>
           </div>
         </div>
@@ -66,12 +70,13 @@ export default function Home() {
       {/* Partners Section */}
       <section id="partners" className="partners">
         <div className="container">
-          <h2>Currently running nodes on...</h2>
+          <h2>Supporting Blockchains</h2>
           <div className="partner-grid">
             <div className="partner-item">
               <img
-                src="/assets/partner-logo-1.png"
-                alt="Blockchain Partner 1"
+                src="/vitruveo-logo-horizontal-black.svg"
+                alt="Blockchain Technology"
+                id="vitruveo-logo"
               />
             </div>
           </div>
